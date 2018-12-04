@@ -1,186 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Open learning </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="Description" content="Open learning website especially for competitive exam aspirants providing short content for economics,history,polity etc">
-  	<meta name="keywords" content="tnpsc,upsc,ssc,openlearning,microeconomics,macroeconomics,upscpolity,tnpscpolity,puttasamycase">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>MP3olimp - Youtube to Mp3 Converter</title>
+    <!-- <link rel="icon" href="#" type="image/x-icon"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<style>
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
+  </head>
+  <body>
+    <center><h1>YT2MP3</h1>
+<span>Fast Youtube to Mp3 Converter</span>
+      <form name="yt" action="" method="get">
+          <div class="input-group col-lg-8">
+        <input type="text" name="yturl" class="form-control input-lg ui-autocomplete-input" autocomplete="on" placeholder="https://www.youtube.com/watch?v=dA42vievwZk">
+        <span class="input-group-btn"><button class="btn btn-info" style="height:46px;" type="submit">CONVERT</button></span>
+        </div>
+      </form>
+    <div id="converter-wrapper" class="input-group col-lg-8" style="margin-top:20px;"></div>
 
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-</style>
-</head>
-<body>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>	
-<div class="jumbotron text-center">
-  <h1>Welcome to Open Learning </h1>
-  <p>Current affair,Economics,Tech,history,mathematics,computerscience!</p> 
-</div>
-	<a href="current.html">are u waiting to update your current affairs </a>	
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">   
-      <h3>Types of Economics</h3>
-	    <img src="macro-vs-micro-economics.png" alt="Smiley face" height="250" width="300"></img><span><br>
-	  	<li>1.Microeconomics </li>
-	  	<li>2.Macroeconomics</li><br>
-	<p>1. microeconomics which deals with particular variable in small scale eg income of family,profit of firm etc..</p>
-	<p>2. macroeconomics which deals with large scale variable particulary nation's income,employment,growth rate,gpd,gnp etc
-	</p>
-	
-    </div>
-    <div class="col-sm-4">
-	     <h3>3.Monetary economics</h3>
-	    <img src="interest-11.png" alt="Smiley face" height="250" width="300"></img><span>
-	  <br><br>
-      <p>3.Monetary economics deals with controling money supply to stablise the economy from inflation central bank does that job</p>
-    </div>
-    <div class="col-sm-4">
-	    <h2>Monetary policy instrument </h2>
-	    <img src="rate.png" alt="Smiley face" height="250" width="300"></img><span>
-      <h3>Repo Rate</h3>        
-      <p>The rate at which commerical banks(sbi,indian bank,hdfc..etc)borrows money from central bank(Reserve bank of india)<p>
-	<h3>Reverse repo Rate</h3>   
-      <p>The rate at which central bank(RBI)borrows money from commerical banks for reducing the money supply</p>
-    </div>
-	   <div class="col-sm-4">
-	     <h3>National income</h3>
-	    <img src="interest-11.png" alt="Smiley face" height="250" width="300"></img><span>
-	  <br><br>
-	  <li> product method <li>
-	  <li>Income method <li>
-      <p>3.Monetary economics deals with controling money supply to stablise the economy from inflation central bank does that job</p>
-    </div>
-	   <div class="col-sm-4">
-	     <h3>puttasamy case</h3>
-	    <img src="privacy.jpg" alt="Smiley face" height="250" width="300"></img><span>
-	  <br><br> 
-      <p>Life and personal liberty are inalienable rights. These are rights which are inseparable from a dignified human existence.  The dignity of the individual, equality between human beings and the quest for liberty are the foundational pillars of the Indian constitution…
-Life and personal liberty are not creations of the constitution. These rights are recognised by the constitution as inhering in each individual as an intrinsic and inseparable part of the human element which dwells within.</p>
-	  <a href="detail.html">Readmore</a>
-	  </div>
-	 </div> 
-	     <h3>Caatsa</h3>
-		  <h4>Countering America's Adversaries Through Sanctions Act </h4>
-		  <img id="myImg" src="caat.jpg"  style="width:100%;max-width:300px">
-      <p>The Countering America's Adversaries Through Sanctions Act, CAATSA is a United States federal law that imposed sanctions on Iran, North Korea, and Russia. </p>
- 
-
-</body>
+    <div class="input-group col-lg-8" style="margin-top:20px;"><span><b>1. How Youtube To Mp3 Download?</b><br />
+Just Copy and paste the youtube video link that you want to convert then Click <b>CONVERT</b> button to convert Youtube video to mp3 file at high 320kbps bitrate.<br />
+Conversion would be very quick, click <b><i class="fa fa-download"></i> Download MP3</b> to download the converted mp3 file.<br /><br />
+<b>2. Is there any file size or download limitations?</b><br />
+There are no limits on filesize and downloads, so you can download unlimited files with no file size limits.<br /><br />
+</span></div>
+<a href="http://mp3olimp.stream" title="Mp3olimp - MP3 Songs Download"><i class="fa fa-download"></i> MP3Olimp</a>
+    </center>
+    <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script type="text/javascript">
+    (function($) {
+      $.fn.isYouTube = function() {
+        var regExpr = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
+        var curVal = $(this).val();
+        return (curVal.match(regExpr))? RegExp.$1 : false;
+      }
+    })(jQuery);
+    
+    $(document).ready(function() {
+      
+      $('form[name=yt]').submit(function(){
+        
+        var ytId = $('input[name=yturl]').isYouTube();
+        if(ytId !== false) {
+          
+          $iframe = $('<iframe>');
+          $iframe.attr({src:'https://yt-mp3s.com/mp3/'+ytId, frameBorder: 0});
+          $iframe.css({width:'100%', height:'100%'});
+          
+          //Remove iframe if one exists (on second url some will exists)
+          $('#converter-wrapper').find('iframe').remove()      
+          
+          $('#converter-wrapper').append($iframe);
+          
+        } else {
+          
+          alert("Please enter a valid youtube url");
+        }
+        return false;
+      });
+    });  
+    </script>
+  </body>
 </html>
