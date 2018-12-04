@@ -1,7 +1,7 @@
-searchbar .form-control input-lg ui-autocomplete-input
+.searchbar input
 {
 text-align:center
-width:20px
+width:50px
 height:100px
-padding-left:150px
+padding-right:150px
 }
