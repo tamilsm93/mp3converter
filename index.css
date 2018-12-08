@@ -1,7 +1,5 @@
-searchbar size
+.searchbar input
 {
-text-align:center
 width:50px
 height:100px
-padding-right:150px
 }
